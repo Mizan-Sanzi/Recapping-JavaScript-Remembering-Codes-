@@ -100,3 +100,29 @@ else {
         }
     }
 }
+
+// ---------------------------------------Ternary --Three Parts ------Structure: [ condition ? do something for true: do another for false ]
+const age = 18;
+
+if (age>=18){
+    console.log('Output of line no 108: You can vote now');
+}
+else {
+    console.log('Boro hou /Become adult to do your vode');
+}
+// -------------------------------------------------------------------------------------------------------------------------------
+age>=18 ? console.log('Give your vote') : console.log('Wait to become adult'); // code in a line with simple ternary way!
+
+// ---------------------------------------------semi advanced ternary 
+
+let toPay = 500;
+const isLeader = true;
+
+/* if (isLeader === false){
+    toPay = 0;
+}
+else {
+    toPay += 100;
+} */
+
+toPay = isLeader === true ? 0 : toPay += 100;
