@@ -30,7 +30,7 @@ console.log(name2.indexOf('Mizan'));
 
 console.log('isArray?:', Array.isArray(name2));
 
-// vid - 20.5 of milestone 4 (JS array -more)
+// vid - 20.5.1 of milestone 4 (JS array -more)
 // Looping in Array 
 // 'for' loop
 // 'while' loop
