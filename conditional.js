@@ -108,7 +108,7 @@ if (age>=18){
     console.log('Output of line no 108: You can vote now');
 }
 else {
-    console.log('Boro hou /Become adult to do your vode');
+    console.log('Boro hou. /Become adult to give your vote');
 }
 // -------------------------------------------------------------------------------------------------------------------------------
 age>=18 ? console.log('Give your vote') : console.log('Wait to become adult'); // code in a line with simple ternary way!
@@ -116,13 +116,33 @@ age>=18 ? console.log('Give your vote') : console.log('Wait to become adult'); /
 // ---------------------------------------------semi advanced ternary 
 
 let toPay = 500;
-const isLeader = true;
+let isLeader = true;
 
-/* if (isLeader === false){
-    toPay = 0;
+// if (isLeader === true){
+//     toPay = 0;
+//     console.log(toPay);
+// }
+// else {
+//     toPay = toPay + 100;
+//     console.log(toPay);
+// }
+
+toPay= isLeader === false ? toPay : toPay+100 ;
+console.log(toPay);
+// -------------------------------------------------------------------------------
+let foodPrice = 1200;
+let isBoss = true;
+
+if(isBoss === true){
+    if(foodPrice>1000){
+        foodPrice = foodPrice/2;
+    }
+    else {
+        foodPrice = 0;
+    }
 }
-else {
-    toPay += 100;
-} */
+else{
+    foodPrice = foodPrice+100;
+}
 
-toPay = isLeader === true ? 0 : toPay += 100;
+// Logical not and double not add hobe -------
